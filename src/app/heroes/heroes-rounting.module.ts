@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
@@ -11,6 +10,6 @@ const heroRoutes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(heroRoutes)],
-  declarations: [RouterModule],
+  exports: [RouterModule],
 })
-export class HeroesModule {}
+export class HeroesRoutingModule {}
