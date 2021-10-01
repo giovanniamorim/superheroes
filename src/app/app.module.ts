@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { CrisisCenterComponent } from './crisis-center/crisis-center.component';
 import { PageNotFoundComponent } from './erros/page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HeroesModule } from './heroes/heroes.module';
+import { HeroesRoutingModule } from './heroes/heroes-rounting.module';
+import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HeroesModule, AppRoutingModule],
-  declarations: [AppComponent, CrisisCenterComponent, PageNotFoundComponent],
+  imports: [BrowserModule, FormsModule, HeroesRoutingModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    CrisisCenterComponent,
+    PageNotFoundComponent,
+    HeroDetailComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
