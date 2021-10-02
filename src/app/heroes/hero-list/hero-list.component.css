@@ -1,0 +1,7 @@
+.heroes .selected a {
+  background-color: #d6e6f7;
+}
+
+.heroes .selected a:hover {
+  background-color: #bdd7f5;
+}

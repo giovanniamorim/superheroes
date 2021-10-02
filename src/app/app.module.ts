@@ -8,9 +8,16 @@ import { PageNotFoundComponent } from './erros/page-not-found/page-not-found.com
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesRoutingModule } from './heroes/heroes-rounting.module';
 import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HeroesRoutingModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HeroesRoutingModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+  ],
   declarations: [
     AppComponent,
     CrisisCenterComponent,

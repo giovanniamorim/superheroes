@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { MessageService } from '../message.service';
 import { Hero } from './hero';
+import { map } from 'rxjs/operators';
 import { HEROES } from './mock-heroes';
 
 @Injectable({
@@ -16,8 +17,9 @@ export class HeroService {
     return heroes;
   }
 
-  // getHero(hero: Hero): Observable<Hero> {
-  //   hero = of(HEROES);
-  //   return hero;
-  // }
+  getHero(id: number | string) {
+    return this.getHeroes().pipe(
+      map((heroes: Hero[]) => heroes.find((hero) => hero.id === +id)!)
+    );
+  }
 }
