@@ -6,10 +6,7 @@ import { AppComponent } from './app.component';
 import { CrisisCenterComponent } from './crisis-center/crisis-center.component';
 import { PageNotFoundComponent } from './erros/page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HeroesRoutingModule } from './heroes/heroes-rounting.module';
-import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CommonModule } from '@angular/common';
 import { HeroesModule } from './heroes/heroes.module';
 
 @NgModule({
