@@ -8,7 +8,7 @@ import {
   query,
 } from '@angular/animations';
 
-export const slideAnimation = trigger('routeAnimation', [
+export const slideInAnimation = trigger('routeAnimation', [
   transition('heroes <=> hero', [
     style({ position: 'relative' }),
     query(':enter, :leave', [

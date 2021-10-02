@@ -9,21 +9,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeroesRoutingModule } from './heroes/heroes-rounting.module';
 import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import { HeroesModule } from './heroes/heroes.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
-    HeroesRoutingModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    HeroesModule,
+    AppRoutingModule,
   ],
-  declarations: [
-    AppComponent,
-    CrisisCenterComponent,
-    PageNotFoundComponent,
-    HeroDetailComponent,
-  ],
+  declarations: [AppComponent, CrisisCenterComponent, PageNotFoundComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
