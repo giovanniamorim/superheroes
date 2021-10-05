@@ -8,16 +8,28 @@ import { PageNotFoundComponent } from './erros/page-not-found/page-not-found.com
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroesModule } from './heroes/heroes.module';
+import { AdminModule } from './admin/admin.module';
+import { CommonModule } from '@angular/common';
+import { CrisisCenterModule } from './crisis-center/crisis-center.module';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    CommonModule,
     BrowserAnimationsModule,
     FormsModule,
-    HeroesModule,
+    HeroesModule, 
+    CrisisCenterModule,
+    BrowserModule,
+    AdminModule,
     AppRoutingModule,
   ],
-  declarations: [AppComponent, CrisisCenterComponent, PageNotFoundComponent],
+  declarations: [
+    AppComponent,
+    ComposeMessageComponent,
+    CrisisCenterComponent,
+    PageNotFoundComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
